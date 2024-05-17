@@ -1,0 +1,101 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@14.1.4_react-dom@18.3.1_react@18.3.1_sass@1.77.1/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[2]!./node_modules/.pnpm/next@14.1.4_react-dom@18.3.1_react@18.3.1_sass@1.77.1/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[13].use[3]!./node_modules/.pnpm/next@14.1.4_react-dom@18.3.1_react@18.3.1_sass@1.77.1/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[13].use[4]!./node_modules/.pnpm/next@14.1.4_react-dom@18.3.1_react@18.3.1_sass@1.77.1/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[13].use[5]!./src/styles/dingding.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.main-conteiner {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  margin-top: 150px;
+}
+.logo-title .logo {
+  width: 200px;
+  height: 200px;
+}
+.logo-title .logo img {
+  display: block;
+  width: 100%;
+}
+.logo-title .title {
+  width: 800px;
+  height: 100px;
+  margin-top: 50px;
+}
+.logo-title .title img {
+  display: block;
+  width: 100%;
+  background: #040506;
+}
+
+.playground {
+  width: 100%;
+  height: 3000px;
+}
+.playground .animation-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #040506;
+  height: 710px;
+}
+.playground .animation-container .list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  height: 460px;
+  background: #15171b;
+  border-radius: 20px;
+  padding: 100px;
+  box-sizing: border-box;
+}
+.playground .animation-container .list-item {
+  width: 80px;
+  height: 80px;
+  margin-right: 73.333px;
+}
+.playground .animation-container .list-item img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 20px;
+}
+.playground .animation-container .list-item p {
+  color: #fff;
+  text-align: center;
+}
+.playground .animation-container .mr-0 {
+  margin-right: 0;
+}
+.playground .animation-container .mt-100 {
+  margin-top: 100px;
+}
+
+.last-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 800px;
+  background: #0a0610;
+}
+.last-area img {
+  display: block;
+  width: 200px;
+  margin-right: 20px;
+}
+.last-area span {
+  display: inline-block;
+  line-height: 60px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #fff;
+}
