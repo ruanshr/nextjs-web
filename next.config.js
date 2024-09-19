@@ -72,15 +72,15 @@ let nextConfig = {
     };
 
     // Eslint overlay
-    if (!isServer) {
-      config.plugins.push(
-        new ESLintPlugin({
-          context: __dirname,
-          emitError: true,
-          extensions: ["ts", "tsx"], // 指定要检查的文件类型
-        })
-      );
-    }
+    // if (!isServer) {
+    //   config.plugins.push(
+    //     new ESLintPlugin({
+    //       context: __dirname,
+    //       emitError: true,
+    //       extensions: ["ts", "tsx"], // 指定要检查的文件类型
+    //     })
+    //   );
+    // }
 
     // sentry
     if (isProd && SENTRY_RELEASE) {

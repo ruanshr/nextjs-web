@@ -1,0 +1,32 @@
+.verticalCard {
+  --n: 0;
+  border-radius: 8px;
+  background-color: #FFF;
+  position: absolute;
+  z-index: calc(100 - var(--n));
+  width: 400px;
+  transform:  translateY(calc(var(--n) * -1 * 10px)) scale(calc((20 - var(--n)) * 0.05));
+  &:nth-child(n+4) {
+    display: none
+  }
+
+  &.over {
+    opacity: 0;
+  }
+}
+
+.sideDownAnimation {
+  animation: slideDown  1s ease forwards
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
