@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
-const path = require("path");
-const dotenv = require("dotenv");
-const ESLintPlugin = require("eslint-webpack-plugin");
-const i18nConfig = require("./config/i18nConfig");
-const { withSentryConfig } = require("@sentry/nextjs");
-const SentryWebpackPlugin = require("@sentry/webpack-plugin");
+import bundleAnalyzer from '@next/bundle-analyzer';
+import { withSentryConfig } from "@sentry/nextjs";
+import SentryWebpackPlugin from "@sentry/webpack-plugin";
+import dotenv from "dotenv";
+import ESLintPlugin from "eslint-webpack-plugin";
+import path from "path";
+import i18nConfig from "./config/i18nConfig.js";
 const configuration = dotenv.config({ path: ".env.sentry" }).parsed;
 const SENTRY_RELEASE = configuration?.SENTRY_RELEASE || "";
 
@@ -13,7 +14,7 @@ const isProd = process.env.APP_ENV === "production";
 
 const BUILD_ID = new Date().valueOf().toString(32); // 每次打包生成一个唯一标识
 
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
+const withBundleAnalyzer = bundleAnalyzer({
   enabled: process.env.ANALYZE === "true",
 });
 
@@ -116,4 +117,4 @@ nextConfig = isProd
     )
   : nextConfig;
 
-module.exports = withBundleAnalyzer(nextConfig);
+export default withBundleAnalyzer(nextConfig);

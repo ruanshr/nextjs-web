@@ -1,4 +1,4 @@
-const path = require('path')
+import path from 'path'
 
 // 当前项目根目录的路径
 const curPath = __dirname
@@ -46,4 +46,4 @@ const langConfig = {
   filename: 'global',
 }
 
-module.exports = langConfig
+export default langConfig

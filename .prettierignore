@@ -1,0 +1,13 @@
+*.yaml
+node_modules
+dist
+public
+*.svg
+*.ico
+*.json
+.gitignore
+*.md
+*.log
+*.lock
+.vsocde
+.idea
